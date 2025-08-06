@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software Development Specialization</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Software Development Specialization</h2>
+
+<table id="courseTable">
+    <thead>
+        <tr>
+            <th colspan="6">Software Development Specialization</th>
+        </tr>
+        <tr>
+            <th onclick="sortTable(0)">Credits</th>
+            <th onclick="sortTable(1)">Course Number</th>
+            <th onclick="sortTable(2)">Course Name</th>
+            <th onclick="sortTable(3)">Req. Category</th>
+            <th onclick="sortTable(4)">Term</th>
+            <th onclick="sortTable(6)">Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3</td>
+            <td>COP 1000</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=COP%201000">Principles of Programming</a></td>
+            <td>Pre-Req</td>
+            <td style="background-color: lightgray;">2022 3 FALL</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>STA 2023</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=STA%202023">Statistics</a></td>
+            <td>Pre-Req</td>
+            <td style="background-color: lightgray;">2022 3 FALL</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>COP 2334</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=COP%202334">Introduction to C++ Programming</a></td>
+            <td>Pre-Req</td>
+            <td style="background-color: lightgray;">2023 1 SPRING</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>GEB 3213</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=GEB%203213">Foundations of Managerial Communications</a></td>
+            <td>CIST Major</td>
+            <td style="background-color: lightgray;">2023 1 SPRING</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>COP 3330</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=COP%203330">Object Oriented Programming</a></td>
+            <td>Specialization</td>
+            <td style="background-color: lightgray;">2023 2 SUMMER</td>
+            <td>A</td>
+
+        </tr>
+        <!--<tr>
+            <td>3</td>
+            <td>POS 2041</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=POS%202041">American National Government</a></td>
+            <td>Backfill</td>
+            <td style="background-color: lightgray;">2023 2 SUMMER</td>
+            <td>W</td>
+
+        </tr>-->
+        <tr>
+            <td>3</td>
+            <td>CEN 3024</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=CEN%203024">Software Development 1</a></td>
+            <td>Specialization</td>
+            <td style="background-color: lightgray;">2023 3 FALL</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>MAN 4504</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=MAN%204504">Operational Decision Making</a></td>
+            <td>CIST Major</td>
+            <td style="background-color: lightgray;">2024 1 SPRING</td>
+            <td>B</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>CEN 4025</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=CEN%204025">Software Development 2</a></td>
+            <td>Specialization</td>
+            <td style="background-color: lightgray;">2024 2 SUMMER</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>COP 3813</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=COP%203813">Internet Programming</a></td>
+            <td>Spec. Elective</td>
+            <td style="background-color: lightgray;">2024 3 FALL</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ISM 3011</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=ISM%203011">Introduction to Information Technology Management</a></td>
+            <td>CIST Major</td>
+            <td style="background-color: lightgray;">2024 3 FALL</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>CEN 4802</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=CEN%204802">Software, Configuration, Integration and Testing</a></td>
+            <td>Specialization</td>
+            <td style="background-color: lightgray;">2025 1 SPRING</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ISM 3113</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=ISM%203113">Information Systems Analysis & Design</a></td>
+            <td>Spec. Elective</td>
+            <td style="background-color: lightgray;">2025 1 SPRING</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>BSCC 1005</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=BSCC%201005">Fundamentals of Biology</a></td>
+            <td>Backfill</td>
+            <td style="background-color: lightgray;">2025 2 SUMMER</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>COP 2360</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=COP%202360">C# Programming</a></td>
+            <td>TECH CTBS</td>
+            <td style="background-color: lightgray;">2025 2 SUMMER</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>AMH 2020</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=AMH%202020">US History Since 1877</a></td>
+            <td>Backfill</td>
+            <td style="background-color: greenyellow;">* CLEP *</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>COP 3530</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=COP%203530">Data Structures and Algorithm Analysis</a></td>
+            <td>Specialization</td>
+            <td style="background-color: yellow;">2025 3 FALL</td>
+            <td></td>
+
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>ISM 3324</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=ISM%203324">Applications in Information Security</a></td>
+            <td>Specialization</td>
+            <td style="background-color: yellow;">2025 3 FALL</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ISM 4300</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=ISM%204300">Information Systems Operations Management</a></td>
+            <td>CIST Major</td>
+            <td>2026 1 SPRING</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ISM 4041</td>
+            <td><a href="https://catalog.easternflorida.edu/search/?P=ISM%204041">Emerging Information Technologies</a></td>
+            <td>Spec. Elective</td>
+            <td>2026 1 SPRING</td>
+            <td></td>
+
+        </tr>
+        <!-- Add remaining rows here -->
+    </tbody>
+</table>
+
+<script>
+    function sortTable(columnIndex) {
+        const table = document.getElementById("courseTable");
+        const rows = Array.from(table.rows).slice(2); // Skip header rows
+        const isNumeric = !isNaN(rows[0].cells[columnIndex].innerText.trim());
+        
+        rows.sort((rowA, rowB) => {
+            const cellA = rowA.cells[columnIndex].innerText.trim().toLowerCase();
+            const cellB = rowB.cells[columnIndex].innerText.trim().toLowerCase();
+            
+            if (isNumeric) {
+                return parseFloat(cellA) - parseFloat(cellB);
+            }
+            return cellA.localeCompare(cellB);
+        });
+
+        // Append sorted rows back to the table
+        const tbody = table.querySelector("tbody");
+        rows.forEach(row => tbody.appendChild(row));
+    }
+</script>
+
+</body>
+</html>
